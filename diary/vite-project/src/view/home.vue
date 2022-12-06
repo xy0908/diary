@@ -1,30 +1,6 @@
-<script setup>
-import HeaderChoiceMonth from "../components/HeaderChoiceMonth.vue";
-// 引入路由
-import router from "../router/index.js";
-/**
- *  see 跳转到查看日记页面
- * */
-const see = () => {
-  router.push({
-    name: "see",
-  });
-};
-
-const remind = () => {
-  router.push({
-    name: "remind",
-  });
-};
-</script>
-
 <template>
   <!--  首页-->
   <div class="home">
-    <!--  头部  -->
-    <header>
-      <HeaderChoiceMonth />
-    </header>
     <!-- 内容 -->
     <main class="main">
       <h1>小羊日记</h1>
@@ -45,6 +21,27 @@ const remind = () => {
     <router-view></router-view>
   </div>
 </template>
+
+<script setup>
+// 引入路由
+import router from "../router/index.js";
+/**
+ *  see 跳转到查看日记页面
+ *
+ *  remind 跳转到提醒页面
+ * */
+const see = () => {
+  router.push({
+    name: "see",
+  });
+};
+
+const remind = () => {
+  router.push({
+    name: "remind",
+  });
+};
+</script>
 
 <style scoped lang="less">
 .home {

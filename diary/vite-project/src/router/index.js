@@ -8,14 +8,19 @@ const routes = [
     component: home,
   },
   {
-    path: "/see/",
+    path: "/see/", //查看日记
     name: "see",
     component: () => import("../view/see.vue"),
   },
   {
-    path: "/remind",
+    path: "/remind", // 提醒
     name: "remind",
     component: () => import("../view/remind.vue"),
+  },
+  {
+    path: "/about", // 关于我
+    name: "about",
+    component: () => import("../view/about.vue"),
   },
 ];
 

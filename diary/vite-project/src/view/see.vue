@@ -1,5 +1,4 @@
 <script setup>
-import HeaderChoiceMonth from "../components/HeaderChoiceMonth.vue";
 import axios from "axios";
 import "@wangeditor/editor/dist/css/style.css";
 import { Editor, Toolbar } from "@wangeditor/editor-for-vue";
@@ -74,9 +73,7 @@ const add = () => {
   <!--  查看日记-->
   <div id="see">
     <!--  头部  -->
-    <header>
-      <HeaderChoiceMonth />
-    </header>
+    <header></header>
 
     <!-- 内容 -->
     <main>
